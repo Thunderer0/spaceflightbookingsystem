@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+    <script>
+        function lamda()
+        {
+            alert("this website is under construction");
+        }
+        </script>
+    <div class="login-box">
+        <div class="btn-box">
+            <div class="login-btn"></div>
+            <button onclick="document.location='login.html'" class="button">Login</button>
+            <button onclick="document.location='signup.html'" class="button">Sign up</button>
+        </div>  
+            
+            <form action="post" class="login-form">
+
+                <input type="text" id="username" name="username" placeholder="Username">
+                <input type="password" id="pwd" name="pwd" placeholder="Password">
+            </form>
+            <button class="login button" onclick="check()">Submit</button>
+            <button class="google-login" onclick="lamda()">Login with Google  <img src="google.png" height="20px" width="20px" alt=""></button>
+            <script src="login.js"></script>
+    </div>
+</body>
+
+</html>

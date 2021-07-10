@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      background-color: white;
+    }
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector(".menu");
+
+      document.querySelector(".menu-btn").addEventListener("click", () => {
+        nav.classList.add("menu-open");
+      });
+
+      document.querySelector(".overlay").addEventListener("click", () => {
+        nav.classList.remove("menu-open");
+      });
+      document.querySelector(".booking-box").addEventListener("click", () => {
+        nav.classList.remove("menu-open");
+      });
+    });
+    function AddRow() {
+      var datetime = document.getElementById('datetime').value;
+      var tottic = document.getElementById('tottic').value;
+      if (datetime == '') {
+        alert("please fill complete details")
+        console.log("halo")
+      }
+      else if (tottic == '') {
+        alert("please fill complete details")
+      }
+      else {
+        alert("payment succesfull your ticket is booked")
+        var datetime = document.getElementById('datetime').value;
+        var from = document.getElementById('from').value;
+        var to = document.getElementById('to').value;
+        var tottic = document.getElementById('tottic').value;
+        var trans = "Successful";
+
+        var table = document.getElementById('MainTable');
+
+        var newRow = table.insertRow(table.rows.length / 1);
+
+
+        var cel1 = newRow.insertCell(0);
+        var cel2 = newRow.insertCell(1);
+        var cel3 = newRow.insertCell(2);
+        var cel4 = newRow.insertCell(3);
+        var cel5 = newRow.insertCell(4);
+
+
+
+        cel1.innerHTML = datetime;
+        cel2.innerHTML = from;
+        cel3.innerHTML = to;
+        cel4.innerHTML = tottic;
+        cel5.innerHTML = trans;
+
+
+        document.getElementById('MainTable').style.display = '';
+      }
+    }
+
+
+
+  </script>
+</head>
+
+<body class="booking-page">
+  <div>
+    <header class="header">
+      <button class="menu-btn" id="nav-btn">
+        <i class="material-icons">menu</i>
+      </button>
+    </header>
+  </div>
+  <nav class="menu">
+    <div class="menu-content">
+
+      <a href="userhomepage.html" class="menu-link menu-link-active"> <i class="material-icons">style</i> Book
+        Tickets</a>
+      <a href="cancelpage.html" class="menu-link"> <i class="material-icons">cancel</i> Cancel Tickets</a>
+      <a href="faqs.html" class="menu-link"> <i class="material-icons">contact_support</i> FAQs</a>
+      <a href="contact.html" class="menu-link"> <i class="material-icons">person</i> Contact us</a>
+      <a href="login.html" class="menu-link"> <i class="material-icons">logout</i> Logout</a>
+    </div>
+    <div class="overlay"></div>
+  </nav>
+  <form class="booking-box">
+    <h1>BOOK YOUR TICKETS</h1>
+    <div action="" class="booking-form">
+      <label for="from">From : </label>
+      <select name="from" class="input-group" id="from">
+        <option value="Ahmedabad">Ahmedabad</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Tokyo">Tokyo</option>
+        <option value="Barcelona">Barcelona</option>
+      </select>
+      <label for="to">To : </label>
+      <select name="to" class="input-group" id="to">
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="London">London</option>
+        <option value="San Fransisco">San Fransisco</option>
+        <option value="Shanghai">Shanghai</option>
+        <option value="Qatar">Qatar</option>
+
+      </select>
+      <label for="datetime">Date and Time : </label>
+      <input name="datetime" class="input-group1" id="datetime" type="datetime-local">
+      <label for="total">Total Tickets : </label>
+      <input type="number" name="total" class="input-group2" placeholder="Total Tickets" min="0" max="20" id="tottic">
+      <br>
+      <div class="btn-row">
+        <button type="reset" class="form-btn">Reset</button>
+        <button type="button" class="form-btn" onclick="AddRow()">Confirm to pay</button>
+      </div>
+  </form>
+
+  <table id="MainTable" style="display: none;">
+    <tr>
+      <th>Date</th>
+
+      <th>From</th>
+      <th>To</th>
+      <th>Number of seats</th>
+
+      <th>Transaction Status</th>
+    </tr>
+    <tr>
+
+    </tr>
+
+
+
+
+  </table>
+  </div>
+
+</body>
+
+</html>

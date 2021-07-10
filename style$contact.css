@@ -1,0 +1,111 @@
+body{
+    background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+}
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+.header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to center rgb(255, 255, 255),rgb(235, 193, 165));
+}
+.menu-content{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100vh;
+        width: 250px;
+        background: rgb(255, 255, 255);
+        transform: translateX(-250px);
+        transition: transform 0.3s;
+    }
+.menu-open .menu-content{
+    transform: translateX(0px);
+    box-shadow: 0 0 15px  rgba(0, 0, 0, 0.37);
+}
+.menu-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu-link>i{
+    margin-right: 20px;
+}
+.menu-link-active{
+    color: rgb(255, 255, 255);
+    background:linear-gradient(to right,rgb(36, 0, 197),rgb(54, 243, 250)) ;
+}
+.menu-link:hover{
+    background:linear-gradient(to right,rgb(0, 0, 0),rgb(206, 206, 206));
+    color: white;
+} 
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.menu-open .overlay{
+    visibility: visible;
+    opacity: 1;
+}

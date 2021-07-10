@@ -1,0 +1,18 @@
+
+#newflight{
+    float:right;
+    margin-bottom: 10px;
+    margin-right:5px;
+}
+#submitb{
+    float:right;
+    margin-bottom: 10px;
+    margin-right:5px;
+    
+}
+#fcont{
+    overflow: auto;
+}
+#MainTable{
+    size: inherit;
+}

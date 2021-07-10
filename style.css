@@ -1,0 +1,508 @@
+/* for login page */
+
+.login-page{
+    background: url(bg1.jpg);
+}
+
+.login-box{
+    height: 400px;
+    width: 350px;
+    background-image: url(bg1.jpg) ;
+    margin: 100px auto;
+}
+.btn-box{
+    width: 350px;
+    border-radius: 30px;
+    margin: 35px auto;
+    position: relative;
+}
+.login-btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 175px;
+    height: 40px;
+    background: linear-gradient(to right,rgb(36, 0, 197),rgb(54, 243, 250));
+    border-radius: 30px;
+
+}
+.button{
+    width: 173px;
+    height: 40px;
+    position: relative;
+    border: 0px;
+    background: transparent;
+    font-size: 20px;
+    color: rgb(253, 253, 253);
+    font-weight: 600;
+
+}
+.login-form input{
+
+    background: transparent;
+    margin: 20px 50px;
+    padding: 10px 20px;
+    border:none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    font-size: 17px;
+
+}
+.login{
+    border: none;
+    outline: none;
+    position: absolute;
+    margin: 10px 87px;
+    margin-top: 25px;
+    padding: 10px 30px;
+    background:linear-gradient(to right,rgb(36, 0, 197),rgb(54, 243, 250)) ;
+    border-radius: 30px;
+    color: rgb(253, 253, 253);
+    font-weight: 600;
+}
+.google-login{
+    margin: 10px 15px;
+    margin-top: 100px;
+    padding: 7px 90px;
+    padding-bottom: 12px;
+    border-radius: 40px;
+    border: none;
+    background-color:rgb(255, 255, 255);
+    font-weight: 600;
+}
+.google-login img{
+    top: 4px;
+    left: 10px;
+    position: relative;
+
+}
+
+/* for signup page */
+
+.signup-page{
+    background: url(bg1.jpg);
+}
+.signup-box{
+    height: 600px;
+    width: 350px;
+    background-image: url(bg1.jpg) ;
+    margin: 50px auto;
+}
+.signup-btn{
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 175px;
+    height: 40px;
+    background: linear-gradient(to right,rgb(36, 0, 197),rgb(54, 243, 250));
+    border-radius: 30px;
+
+}
+.signup-form input{
+
+    background: transparent;
+    margin: 10px 50px;
+    padding: 10px 20px;
+    border:none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    font-size: 17px;
+
+}
+.signup-form input[type=submit]{
+    border: none;
+    outline: none;
+    position: absolute;
+    margin: 10px 110px;
+    margin-top: 40px;
+    padding: 10px 30px;
+    background:linear-gradient(to right,rgb(36, 0, 197),rgb(54, 243, 250)) ;
+    border-radius: 30px;
+    color: rgb(253, 253, 253);
+    font-weight: 600;
+}
+/* menu bar */
+.header{
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to center rgb(255, 255, 255),rgb(235, 193, 165));
+}
+.menu-content{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100vh;
+        width: 250px;
+        background: rgb(255, 255, 255);
+        transform: translateX(-250px);
+        transition: transform 0.3s;
+    }
+.menu-open .menu-content{
+    transform: translateX(0px);
+    box-shadow: 0 0 15px  rgba(0, 0, 0, 0.37);
+}
+.menu-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu-link>i{
+    margin-right: 20px;
+}
+.menu-link-active{
+    color: rgb(255, 255, 255);
+    background:linear-gradient(to right,rgb(36, 0, 197),rgb(54, 243, 250)) ;
+}
+.menu-link:hover{
+    background:linear-gradient(to right,rgb(0, 0, 0),rgb(206, 206, 206));
+    color: white;
+} 
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.menu-open .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* booking page */
+.booking-page{
+    /* background: radial-gradient(rgb(255, 255, 255),rgb(235, 193, 165)); */
+    background: url(3.jpg);
+    background-size: cover;
+}
+.booking-box{
+    background: radial-gradient(rgb(13, 0, 70),rgb(174, 250, 255));
+    height: 250px;
+    width: 90vw;
+    margin: 80px auto;
+    position: relative;
+}
+.booking-box h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    top: 18px;
+    position: relative;
+}
+.booking-form{
+    height: 300px;
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0px auto;
+    box-shadow: 0px 15px 25px  rgba(0, 0, 0, 0.493);
+}
+.booking-form label{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+.booking-form .input-group{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 40px;
+    width: 400px;
+    bottom: 5px;
+    position: relative;
+    border:none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+.booking-form .input-group1{
+    width: 300px;
+    margin: 0px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+.booking-form .input-group2{
+    width: 150px;
+    margin: 0px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    background: transparent;
+}
+.form-btn{
+    margin: 30px;
+    margin-top: 90px;
+    position: relative;
+    left: 360px;
+    padding: 5px 35px;
+    font-size: 20px;
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient( rgb(174, 250, 255),rgb(13, 0, 70));
+}
+
+/* cancellation page */
+
+.cancel-box{
+    background: radial-gradient(rgb(13, 0, 70),rgb(174, 250, 255));
+    height: 250px;
+    width: 90vw;
+    margin: 80px auto;
+    position: relative;
+}
+.cancel-box h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    top: 18px;
+    position: relative;
+}
+.cancel-form{
+    height: 300px;
+    width: 80vw;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin: 0px auto;
+    box-shadow: 0px 15px 25px  rgba(0, 0, 0, 0.493);
+}
+.cancel-form label{
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+.cancel-form .input-group{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 40px;
+    width: 400px;
+    bottom: 5px;
+    position: relative;
+    border:none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    background: transparent;
+    color: rgb(0, 0, 0);
+}
+.cancel-form .input-group1{
+    width: 300px;
+    margin: 0px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+.cancel-form .input-group2{
+    width: 150px;
+    margin: 30px 10px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-bottom: 1px solid rgb(95, 95, 95);
+    background: transparent;
+}
+.cancelform-btn{
+    margin-top: 30px;
+    position: relative;
+    left: 450px;
+    padding: 5px 35px;
+    font-size: 20px;
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient( rgb(174, 250, 255),rgb(13, 0, 70));
+}
+
+/* FAQs page */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
+.faq-page{
+    background: url(3.jpg);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+  font-family: 'Open Sans';
+  font-size: 1.5em;
+}
+
+.content {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  padding: 0 60px 0 0;
+}
+
+.centerplease {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  max-width: 650px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.question {
+  position: relative;
+  background: #0d1361;
+  color: white;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.answers {
+  background: rgb(255, 255, 255);
+  padding: 0px 15px;
+  margin: 5px 0;
+  border-radius: 30px;
+  max-height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.questions:checked ~ .answers{
+  max-height: 500px;
+  opacity: 1;
+  padding: 15px;
+}
+.questions:checked ~ .questions{
+    background-color: rgb(77, 196, 196);
+}
+
+.plus {
+  position: absolute;
+  color: #eee;
+  margin-left: 10px;
+  z-index: 1;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.questions {
+  display: none;
+}
+/* contact page */
+.contact-page{
+    background: url(/project/3.jpg);
+    background-size : cover; 
+}
+.contact{
+    width: 40vw;
+    margin: 0px auto;
+    margin-top: 70px;
+    color: rgb(12, 5, 54);
+    border: 2px solid black;
+    background-color:ivory;
+    padding: 10px;
+    margin-left: auto;
+
+    border-radius: 30px;
+
+}
+.contact-head{
+    font-size: 40px;
+    text-align: center;
+}
+.contact h1{
+    font-size: 45px;
+    font-weight: 800;
+}
+.contact h2{
+    font-size: 33px;
+}
+.contact h4{
+    font-size: 22px;
+    color: rgb(139, 0, 0);
+}
+.contact p{
+    margin-left: 20px;
+    font-size: 17px;
+}
+.contact div{
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+/* home page */
+.home-login-btn{
+    padding: 10px 40px;
+    position: fixed;
+    top: 45px;
+    right: 25px;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.home-page{
+    background: url(bg1.jpg);
+    background-size: cover;
+    color: white;
+}
+.home-page h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.home-page p{
+    font-size: 17px;
+    margin: 10px;
+}
+.home-footer{
+    margin: 50px 40%;
+}
+.home-footer p{
+    color: rgb(77, 77, 77);
+    font-size: large;
+    font-weight: bold;
+}
+.home-footer button{
+    left: 50px;
+    position: relative;
+    padding: 15px 50px;
+    border-radius: 20px;
+    font-size: 25px;
+    background: linear-gradient(to right,rgb(36, 0, 197),rgb(54, 243, 250));
+}
+

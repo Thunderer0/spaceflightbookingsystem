@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        // var acc = document.getElementsByClassName('accordion');
+        // var i;
+        // var len = acc.length;
+        // for (i = 0; i < len; i++) {
+        //     acc[i].addEventListener('click', function () {
+        //         this.classList.toggle('active');
+        //         var panel = this.nextElementSibling;
+        //         if (panel.style.maxHeight) {
+        //             panel.style.maxHeight = null;
+        //         }
+        //         else {
+        //             panel.style.maxHeight = panel.scrollHeight + 'px'
+        //         }
+        //     })
+        // }
+        document.addEventListener("DOMContentLoaded", () => {
+            const nav = document.querySelector(".menu");
+
+            document.querySelector(".menu-btn").addEventListener("click", () => {
+                nav.classList.add("menu-open");
+            });
+
+            document.querySelector(".overlay").addEventListener("click", () => {
+                nav.classList.remove("menu-open");
+            });
+        });
+    </script>
+</head>
+
+<body class="faq-page">
+    <div>
+        <header class="header">
+            <button class="menu-btn" id="nav-btn">
+                <i class="material-icons">menu</i>
+            </button>
+        </header>
+    </div>
+    <div>
+        <nav class="menu">
+            <div class="menu-content">
+
+                <a href="userhomepage.html" class="menu-link"> <i class="material-icons">style</i> Book Tickets</a>
+                <a href="cancelpage.html" class="menu-link"> <i class="material-icons">cancel</i> Cancel Tickets</a>
+                <a href="faqs.html" class="menu-link menu-link-active"> <i class="material-icons">contact_support</i>
+                    FAQs</a>
+                <a href="contact.html" class="menu-link"> <i class="material-icons">person</i> Contact us</a>
+                <a href="login.html" class="menu-link"> <i class="material-icons">logout</i> Logout</a>
+            </div>
+            <div class="overlay"></div>
+        </nav>
+    </div>
+    <div class="faq-box">
+        <h1>Frequently Asked Questions(FAQs)</h1>
+        <div class="accordion">
+
+            <h4><i class="material-icons">add_circle</i>What types of payment does Shop SpaceX accept?</h4>
+        </div>
+        <div class="panel">
+            <p>
+                Shop SpaceX accepts all major credit cards and Apple Pay.
+            </p>
+        </div>
+        <div class="accordion">
+            <h4><i class="material-icons">add_circle</i>Do you accept exchanges?</h4>
+        </div>
+        <div class="panel">
+            <p>
+                No, we are unable to accept direct exchanges.
+            </p>
+        </div>
+        <div class="accordion">
+            <h4><i class="material-icons">add_circle</i>Can I return a product purchased from a third party?</h4>
+        </div>
+        <div class="panel">
+            <p>
+                Items purchased from a third party must be returned directly to that seller. Unfortunately, SpaceX
+                cannot accept the return of goods purchased from any third-party vendor.
+            </p>
+        </div>
+        <div class="accordion">
+            <h4><i class="material-icons">add_circle</i>Am I eligible for a return?</h4>
+        </div>
+        <div class="panel">
+            <p>
+                We only accept returns of items that have been delivered within the last 30 days, and are returned in
+                the condition in which they were shipped. This includes, but is not limited to, ensuring items are
+                unused, unworn, have not been stained or washed, and still have the original tags attached.
+            </p>
+        </div>
+        <div class="accordion">
+            <h4><i class="material-icons">add_circle</i>How do I return a product?</h4>
+        </div>
+        <div class="panel">
+            <p>
+                For domestic orders, if your return meets the above criteria, please visit https://returns.spacex.com to
+                initiate your return. To cover return shipping and restocking, please note that a flat fee of $8.00 will
+                be deducted from your refund. Refunds will be returned to your original method of payment within 7-10
+                days of SpaceX receiving your return. If your item does not meet the above criteria upon inspection, you
+                will not receive a refund. If you have an international order or any other questions, please send an
+                e-mail with your order number to merchandise@spacex.com and a SpaceX representative will be in touch.
+            </p>
+        </div>
+        <div class="accordion">
+            <h4><i class="material-icons">add_circle</i>How soon will my order be processed and how will I know when it
+                has been shipped?</h4>
+        </div>
+        <div class="panel">
+            <p>
+                You will receive a shipping notice via e-mail when your order has left the warehouse. Orders are
+                fulfilled Monday through Friday. Most orders ship within 2-3 days business days of being placed. Due to
+                constraints from our carriers because of current events, shipments may be delayed.
+            </p>
+        </div>
+        <div class="accordion">
+            <h4><i class="material-icons">add_circle</i>How can I track my order?</h4>
+        </div>
+        <div class="panel">
+            <p>
+                When your package has shipped, you will receive a confirmation via e-mail that also contains tracking
+                information from the appropriate carrier.
+            </p>
+        </div>
+        <div class="accordion">
+            <h4><i class="material-icons">add_circle</i>There is a problem with my shipment/my order never arrived -
+                what should I do?</h4>
+        </div>
+        <div class="panel">
+            <p>
+                If you experience any problems with your order, please contact customer service at
+                merchandise@spacex.com.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
